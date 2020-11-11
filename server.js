@@ -47,7 +47,7 @@ const users = mongoose.model("user",userSchema);
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:5000/auth/google/keep",
+    callbackURL: "https://my-keeper-server.herokuapp.com/auth/google/keep",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     passReqToCallback   : true
   }, 
