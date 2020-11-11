@@ -97,7 +97,7 @@ app.get('/auth/google/keep',
    }
     // console.log(User)
     const token = generateAccessToken(User)
-    res.redirect("https://keeper.netlify.app?token=" + token);
+    res.redirect("https://keeper.netlify.app/home?token=" + token);
     
   });
 
